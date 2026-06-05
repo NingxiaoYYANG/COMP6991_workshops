@@ -1,0 +1,173 @@
+    Blocking waiting for file lock on package cache
+   0.016344700s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_lib"}: cargo::core::compiler::fingerprint: fingerprint error for starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)/Check { test: false }/TargetInner { ..: lib_target("q3_lib", ["lib"], "C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\prac_q3\\src\\lib.rs", Edition2021) }
+   0.016371400s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3\target\debug\.fingerprint\starter-84fce707e5cff8f3\lib-q3_lib`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.032510800s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_lib"}: cargo::core::compiler::fingerprint: fingerprint error for starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)/Check { test: true }/TargetInner { ..: lib_target("q3_lib", ["lib"], "C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\prac_q3\\src\\lib.rs", Edition2021) }
+   0.032545700s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3\target\debug\.fingerprint\starter-a11c671d35e20f4c\test-lib-q3_lib`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.033459000s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_1"}: cargo::core::compiler::fingerprint: fingerprint error for starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)/Check { test: false }/TargetInner { name: "q3_1", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\prac_q3\\src\\main_1.rs", Edition2021) }
+   0.033494900s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_1"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3\target\debug\.fingerprint\starter-a259646a4b1cf275\bin-q3_1`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.034104300s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_1"}: cargo::core::compiler::fingerprint: fingerprint error for starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)/Check { test: true }/TargetInner { name: "q3_1", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\prac_q3\\src\\main_1.rs", Edition2021) }
+   0.034134200s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_1"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3\target\debug\.fingerprint\starter-f11a02d9adeffb2d\test-bin-q3_1`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.034696700s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_2"}: cargo::core::compiler::fingerprint: fingerprint error for starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)/Check { test: false }/TargetInner { name: "q3_2", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\prac_q3\\src\\main_2.rs", Edition2021) }
+   0.034723200s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3\target\debug\.fingerprint\starter-2ce4ded2134fd526\bin-q3_2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.035368700s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_2"}: cargo::core::compiler::fingerprint: fingerprint error for starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)/Check { test: true }/TargetInner { name: "q3_2", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\prac_q3\\src\\main_2.rs", Edition2021) }
+   0.035397800s  INFO prepare_target{force=false package_id=starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3) target="q3_2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3\target\debug\.fingerprint\starter-0a8e450590a4e6b2\test-bin-q3_2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking starter v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\prac_q3)
+error: could not compile `starter` (lib test) due to 2 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `starter` (lib) due to 2 previous errors

@@ -1,0 +1,10 @@
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\debug\deps\httparse-1abd0e21f58caa83.d: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\iter.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\macros.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\mod.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\sse42.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\avx2.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\debug\deps\libhttparse-1abd0e21f58caa83.rmeta: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\iter.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\macros.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\mod.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\sse42.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\avx2.rs
+
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\lib.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\iter.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\macros.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\mod.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\sse42.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\httparse-1.8.0\src\simd\avx2.rs:

@@ -1,0 +1,10 @@
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\buf_redux-0a1c5d0e4ec7c5c6.d: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\mod.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\std_buf.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\policy.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\libbuf_redux-0a1c5d0e4ec7c5c6.rlib: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\mod.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\std_buf.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\policy.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\libbuf_redux-0a1c5d0e4ec7c5c6.rmeta: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\mod.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\std_buf.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\policy.rs
+
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\lib.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\mod.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\buffer\std_buf.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\buf_redux-0.8.4\src\policy.rs:

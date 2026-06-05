@@ -1,0 +1,12 @@
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\mime_guess-58a7775f75d6d875.d: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\impl_bin_search.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\mime_types.rs C:\Users\20991\Work\Uni\ Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\build\mime_guess-8860c702e0e66159\out/mime_types_generated.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\libmime_guess-58a7775f75d6d875.rlib: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\impl_bin_search.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\mime_types.rs C:\Users\20991\Work\Uni\ Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\build\mime_guess-8860c702e0e66159\out/mime_types_generated.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\libmime_guess-58a7775f75d6d875.rmeta: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\impl_bin_search.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\mime_types.rs C:\Users\20991\Work\Uni\ Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\build\mime_guess-8860c702e0e66159\out/mime_types_generated.rs
+
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\lib.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\impl_bin_search.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mime_guess-2.0.4\src\mime_types.rs:
+C:\Users\20991\Work\Uni\ Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\build\mime_guess-8860c702e0e66159\out/mime_types_generated.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws05\\ws05\\target\\release\\build\\mime_guess-8860c702e0e66159\\out

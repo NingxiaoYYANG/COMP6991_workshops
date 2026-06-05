@@ -1,0 +1,177 @@
+    Blocking waiting for file lock on package cache
+   0.023858000s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)/Check { test: false }/TargetInner { name: "exam_q5_alt", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q5_24T1\\src\\main_alt.rs", Edition2021) }
+   0.023894300s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1\target\debug\.fingerprint\exam_q5-362fbcb5bf967d7b\bin-exam_q5_alt`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.042873800s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)/Check { test: true }/TargetInner { name: "exam_q5_alt", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q5_24T1\\src\\main_alt.rs", Edition2021) }
+   0.042892600s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1\target\debug\.fingerprint\exam_q5-5797dc62bab8aaef\test-bin-exam_q5_alt`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.043342600s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt2"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)/Check { test: false }/TargetInner { name: "exam_q5_alt2", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q5_24T1\\src\\main_alt2.rs", Edition2021) }
+   0.043357900s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1\target\debug\.fingerprint\exam_q5-a7979566ee7ed639\bin-exam_q5_alt2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.044185400s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt2"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)/Check { test: true }/TargetInner { name: "exam_q5_alt2", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q5_24T1\\src\\main_alt2.rs", Edition2021) }
+   0.044216900s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1\target\debug\.fingerprint\exam_q5-00365b6b30d4342d\test-bin-exam_q5_alt2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.044995500s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt3"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)/Check { test: false }/TargetInner { name: "exam_q5_alt3", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q5_24T1\\src\\main_alt3.rs", Edition2021) }
+   0.045013100s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt3"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1\target\debug\.fingerprint\exam_q5-eb0e41f1459c828f\bin-exam_q5_alt3`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.045505300s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt3"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)/Check { test: true }/TargetInner { name: "exam_q5_alt3", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q5_24T1\\src\\main_alt3.rs", Edition2021) }
+   0.045520700s  INFO prepare_target{force=false package_id=exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1) target="exam_q5_alt3"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1\target\debug\.fingerprint\exam_q5-1b1d1616fc9b8402\test-bin-exam_q5_alt3`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking exam_q5 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q5_24T1)
+error: could not compile `exam_q5` (bin "exam_q5_alt3") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `exam_q5` (bin "exam_q5_alt3" test) due to 1 previous error
+error: could not compile `exam_q5` (bin "exam_q5_alt2" test) due to 4 previous errors
+error: could not compile `exam_q5` (bin "exam_q5_alt" test) due to 5 previous errors
+error: could not compile `exam_q5` (bin "exam_q5_alt") due to 5 previous errors
+error: could not compile `exam_q5` (bin "exam_q5_alt2") due to 4 previous errors

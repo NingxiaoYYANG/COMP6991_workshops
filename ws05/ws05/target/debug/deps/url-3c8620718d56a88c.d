@@ -1,0 +1,11 @@
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\debug\deps\url-3c8620718d56a88c.d: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\host.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\origin.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\parser.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\path_segments.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\slicing.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\quirks.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\debug\deps\liburl-3c8620718d56a88c.rmeta: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\host.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\origin.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\parser.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\path_segments.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\slicing.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\quirks.rs
+
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\lib.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\host.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\origin.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\parser.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\path_segments.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\slicing.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.3.1\src\quirks.rs:

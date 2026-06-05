@@ -1,0 +1,118 @@
+   0.013243900s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3)/Check { test: false }/TargetInner { name: "exam_q3", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q3_22T3\\src\\main.rs", Edition2021) }
+   0.013280800s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3\target\debug\.fingerprint\exam_q3_22T3-2c113629bd936208\bin-exam_q3`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.023214700s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3)/Check { test: true }/TargetInner { name: "exam_q3", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q3_22T3\\src\\main.rs", Edition2021) }
+   0.023240500s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3\target\debug\.fingerprint\exam_q3_22T3-a225fb7bcf9b6f9c\test-bin-exam_q3`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.023716300s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3_alt"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3)/Check { test: false }/TargetInner { name: "exam_q3_alt", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q3_22T3\\src\\main_alt.rs", Edition2021) }
+   0.023737400s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3_alt"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3\target\debug\.fingerprint\exam_q3_22T3-7c4d552fc8209ae3\bin-exam_q3_alt`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.024163500s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3_alt"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3)/Check { test: true }/TargetInner { name: "exam_q3_alt", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q3_22T3\\src\\main_alt.rs", Edition2021) }
+   0.024178800s  INFO prepare_target{force=false package_id=exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3) target="exam_q3_alt"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3\target\debug\.fingerprint\exam_q3_22T3-2240dec95e46ebe5\test-bin-exam_q3_alt`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking exam_q3_22T3 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q3_22T3)
+error: could not compile `exam_q3_22T3` (bin "exam_q3") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `exam_q3_22T3` (bin "exam_q3" test) due to 1 previous error
+error: could not compile `exam_q3_22T3` (bin "exam_q3_alt") due to 14 previous errors
+error: could not compile `exam_q3_22T3` (bin "exam_q3_alt" test) due to 14 previous errors

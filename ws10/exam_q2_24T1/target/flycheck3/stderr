@@ -1,0 +1,174 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.025250600s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_lib"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)/Check { test: false }/TargetInner { ..: lib_target("exam_q2_lib", ["lib"], "C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q2_24T1\\src\\lib.rs", Edition2021) }
+   0.025283300s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1\target\debug\.fingerprint\exam_q2-548a8e8ce62d56ca\lib-exam_q2_lib`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.047107100s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_lib"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)/Check { test: true }/TargetInner { ..: lib_target("exam_q2_lib", ["lib"], "C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q2_24T1\\src\\lib.rs", Edition2021) }
+   0.047130200s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1\target\debug\.fingerprint\exam_q2-52dea581f132d840\test-lib-exam_q2_lib`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.047703100s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)/Check { test: false }/TargetInner { name: "exam_q2", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q2_24T1\\src\\main.rs", Edition2021) }
+   0.047722600s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1\target\debug\.fingerprint\exam_q2-6e4b49dc3a847fae\bin-exam_q2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.048096700s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)/Check { test: true }/TargetInner { name: "exam_q2", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q2_24T1\\src\\main.rs", Edition2021) }
+   0.048110800s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1\target\debug\.fingerprint\exam_q2-1fb198b315b317db\test-bin-exam_q2`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.048422500s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_alt"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)/Check { test: false }/TargetInner { name: "exam_q2_alt", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q2_24T1\\src\\main_alt.rs", Edition2021) }
+   0.048437400s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_alt"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1\target\debug\.fingerprint\exam_q2-06d170505f29dc31\bin-exam_q2_alt`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.048733900s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_alt"}: cargo::core::compiler::fingerprint: fingerprint error for exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)/Check { test: true }/TargetInner { name: "exam_q2_alt", doc: true, ..: with_path("C:\\Users\\20991\\Work\\Uni Tutoring\\UNSW\\COMP6991\\COMP6991-25T3\\workshops\\ws10\\exam_q2_24T1\\src\\main_alt.rs", Edition2021) }
+   0.048744600s  INFO prepare_target{force=false package_id=exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1) target="exam_q2_alt"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1\target\debug\.fingerprint\exam_q2-743e3cf1ba35b1a9\test-bin-exam_q2_alt`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_path
+   6: git_filter_source_path
+   7: git_filter_source_path
+   8: git_filter_source_path
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking exam_q2 v0.1.0 (C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws10\exam_q2_24T1)
+error: could not compile `exam_q2` (lib test) due to 9 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `exam_q2` (lib) due to 9 previous errors

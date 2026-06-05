@@ -1,0 +1,10 @@
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\version_check-f6b8f2f0bf743b31.d: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\version.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\channel.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\date.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\libversion_check-f6b8f2f0bf743b31.rlib: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\version.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\channel.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\date.rs
+
+C:\Users\20991\Work\Uni Tutoring\UNSW\COMP6991\COMP6991-25T3\workshops\ws05\ws05\target\release\deps\libversion_check-f6b8f2f0bf743b31.rmeta: C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\lib.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\version.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\channel.rs C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\date.rs
+
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\lib.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\version.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\channel.rs:
+C:\Users\20991\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\version_check-0.9.4\src\date.rs:
