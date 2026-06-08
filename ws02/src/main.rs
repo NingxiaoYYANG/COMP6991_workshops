@@ -44,27 +44,9 @@ pub fn data_preprocessing() -> Result<Data, Box<dyn Error>> {
 }
 
 /// What is the north-most station?
-/// null doesn't exist in Rust
 pub fn find_north_most_station(data: &Data) -> Option<String> {
-    data.records
-        .iter()
-        .max_by(|a, b| a.latitude.partial_cmp(&b.latitude).unwrap())
-        .map(|a| a.station.clone())
-
-
-
-    // let mut most_north: Option<&Record> = None;
-    // for record in &data.records {
-    //     if most_north.is_none() || record.latitude > most_north.unwrap().latitude {
-    //         most_north = Some(record);
-    //     }
-    // }
-    // most_north.map(|record| record.station.clone())
-
-    // match most_north {
-    //     Some(m) => Some(m.station),
-    //     None => None
-    // }
+    // TODO: implement
+    todo!()
 }
 
 /// What is the south-most station?
@@ -127,15 +109,14 @@ pub fn find_two_closest_stations(data: &Data) -> Option<(String, String)> {
 
 /// Find the names of the two furthest away from each other.
 pub fn find_two_furthest_stations(data: &Data) -> Option<(String, String)> {
-    // TODO: implement
-    todo!()
+    None
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
     // TODO: You don't have to add anything here, but if you want to test your
     // query implementations outside of the unit tests, you can do that here.
     let _data = data_preprocessing()?;
-    dbg!(_data.records);
+
     Ok(())
 }
 
@@ -259,67 +240,3 @@ fn convert_csvrecord_to_record(csv_record: &CSVRecord) -> Record {
 
     record
 }
-
-// use std::collections::HashMap;
-
-
-// fn main() {
-//     // arr
-//     // let mut a: [i32; 4] = [1, 2, 3, 0];
-//     // println!("{:?}", a);
-//     // for num in a {
-//     //     println!("{}", num);
-//     // }
-//     // a[3] = 4;
-//     // println!("{:?}", a)
-
-//     // vec: [1, 2, 3, 4]
-//     // let mut numbers = Vec::new();
-
-//     // numbers.push(1);
-//     // println!("{:?}", numbers);
-    
-//     // numbers.push(1 as u32);
-
-//     // let mut numbers  = Vec::<i32>::from([1, 2, 3]);
-
-//     // // for (int i = 0; i < numbers.len; i++)
-
-//     // for num in numbers {
-//     //     println!("{}", num);
-//     // }
-    
-    
-//     // hashmap
-//     // let students: HashMap<String, u32> = HashMap::from([("Bob".to_string(), 25)]);
-
-//     // dbg!(students.clone()); 
-
-//     // for (name, age) in students {
-//     //     println!("{}: {}", name, age);
-//     // }
-
-//     // match
-//     let dir = Direction::North;
-
-//     match dir {
-//         Direction::North => println!("{:?}", dir),
-//         Direction::South => todo!(),
-//         Direction::West => todo!(),
-//         _ => todo!()
-//     }
-
-
-
-// }
-
-// // Clone : deep copy
-// // Copy : bit by bit copy
-
-// #[derive(Debug, Clone, Copy)]
-// enum Direction {
-//     North,
-//     South,
-//     West,
-//     East
-// }
