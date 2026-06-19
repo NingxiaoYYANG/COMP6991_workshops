@@ -25,7 +25,7 @@ fn main() {
     // Stack: i32, u32, bool, usize, Array, &str
     let mut a = String::from("Hello");
     // move
-    // let b = a; // Move by default
+    // let b = a; // Move by defaults
     // let bb = aa; // Copy bit by bit
     // println!("{}", a);
 
