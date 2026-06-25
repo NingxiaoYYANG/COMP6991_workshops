@@ -1,1 +1,10 @@
 cs6991-25t3-prep
+
+# Rust build artifacts
+target/
+*.rlib
+*.rmeta
+/target/
+
+# Cargo lock files (optional, depends on project type)
+# Cargo.lock
