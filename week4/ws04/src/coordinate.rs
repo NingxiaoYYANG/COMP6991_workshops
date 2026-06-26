@@ -4,15 +4,6 @@ use std::convert::From;
 use crate::direction::Direction;
 
 /// Represent a 2D coordinate.
-/// 
-/// # Example
-/// ```rust
-/// use ws04::Coordinate
-/// let coor = Coordinate {x: 1, y: 1};
-/// assert_eq!(coor, Coordinate {x: 1, y: 1});
-/// ```
-
-#[derive(Copy, Clone)]
 pub struct Coordinate {
     pub x: i32,
     pub y: i32
