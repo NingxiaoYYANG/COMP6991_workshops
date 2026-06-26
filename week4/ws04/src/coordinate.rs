@@ -1,13 +1,25 @@
 use std::default::Default;
-use std::ops::Add;
+use std::ops::{Add, AddAssign};
 use std::convert::From;
 use crate::direction::Direction;
 
 /// Represent a 2D coordinate.
+/// 
+/// # Example
+/// ```rust
+/// use ws04::Coordinate
+/// let coor = Coordinate {x: 1, y: 1};
+/// assert_eq!(coor, Coordinate {x: 1, y: 1});
+/// ```
+
+#[derive(Copy, Clone)]
 pub struct Coordinate {
     pub x: i32,
     pub y: i32
 }
+
+// Heap: Not copyable, because it has dynamic size. Can only clone
+// Stack: Copyable
 
 impl Coordinate {
     /// Create a new coordinate.
@@ -21,12 +33,20 @@ impl Default for Coordinate {
         Coordinate { x: 0, y: 0}
     }
 }
-
+// z = x + y
 impl Add for Coordinate {
     type Output = Coordinate;
 
     fn add(self, rhs: Coordinate) -> Self::Output {
         Coordinate { x: self.x + rhs.x, y: self.y + rhs.y}
+    }
+}
+
+// x = x + y
+impl AddAssign for Coordinate {
+    fn add_assign(&mut self, rhs: Self) {
+        self.x += rhs.x;
+        self.y += rhs.y;
     }
 }
 
