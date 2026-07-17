@@ -1,63 +1,206 @@
-// macro_rules! my_macro {
-//     () => {
-//         3
-//     }
-// }
+use rand::Rng;
+use std::cmp::Eq;
+use std::collections::HashSet;
+use std::hash::Hash;
 
-// macro_rules! torf {
-//     (t) => {
-//         true
-//     };
-//     (f) => {
-//         false
-//     };
-// }
+/*
+Where might this sort of system be required?
 
-// common token labels:
-// expr: expression in rust
-// ident: variable names
-// ty: types in rust
-// block: block of codes in braces
+What are the categories of closures Rust has?
 
-// macro_rules! take_arg {
+What sort of closure is stored by the scheduler? What does that mean?
 
-// }
+What is the lifetime of that closure? Where does it begin and end?
 
+What issues does that present?
 
-// macro_rules! recur_arg {
-    
-// }
+Can you construct an example program that would be great to work, that doesn't?
 
+How might you change the system to overcome those issues?
 
-// macro_rules! recur_self {
-    
-// }
+*/
 
-
-// fn foo(a: i32, b: i32, c: i32, ...) {
-    
-// }
-
-fn main() {
-    // println!("hello");
-
-    // let v = vec!(1, 2, 3, 4);
-
-    // let _value = my_macro!(x);
-
-    // let _true = torf!(t);
-    // let _false = torf!(f);
-
-    // let x = 1;
-
-    // take_arg!({
-    //     println!("Worked {}", x);
-    // });
-
-    // recur!(1);
-
-    // recurself!(1, 2, 3, 4,; {println!("finished");});
-
-    
+#[allow(dead_code)]
+enum TaskResult {
+    Finished(HashSet<Prerequisites>),
+    RunMeAgain,
 }
 
+/// This is a particular task that needs to be run.
+///
+/// A task has "prerequisites" -- it can't run until
+/// they have happened.
+struct Task {
+    prerequisites: HashSet<Prerequisites>,
+    task: Box<dyn FnMut() -> TaskResult + 'static>,
+}
+
+/// This contains all the tasks, and also all the prerequisites
+/// that have already happened.
+struct Scheduler{
+    tasks: Vec<Task>,
+    prerequisites: HashSet<Prerequisites>,
+}
+
+impl Scheduler{
+    fn start(mut self) {
+        let mut rng = rand::thread_rng();
+        loop {
+            if self.tasks.is_empty() {
+                break;
+            }
+            let random_index = rng.gen_range(0..self.tasks.len());
+            if self.tasks[random_index]
+                .prerequisites
+                .is_subset(&self.prerequisites)
+            {
+                let mut task = self.tasks.swap_remove(random_index);
+                let task_result = (task.task)();
+                match task_result {
+                    TaskResult::Finished(new_prerequisites) => {
+                        self.prerequisites.extend(new_prerequisites.into_iter());
+                    }
+                    TaskResult::RunMeAgain => {
+                        self.tasks.push(task);
+                    }
+                }
+            }
+        }
+    }
+
+    fn add_task(&mut self, task: Task) {
+        self.tasks.push(task);
+    }
+
+    fn new() -> Self {
+        Self {
+            tasks: vec![],
+            prerequisites: HashSet::new(),
+        }
+    }
+}
+
+/// This is a list of every "event" that can happen in our
+/// scheduler system.
+#[derive(PartialEq, Eq, Hash)]
+enum Prerequisites {
+    CleanedTestFile,
+    CleanedCargo,
+    CargoBuiltPrintRandoms,
+    CargoBuiltProgramRunner,
+    WrittenRandoms,
+}
+
+/// Tasks should happen in this order:
+///
+/// Clean Cargo  -> Wait until cargo is clean -> Build PrintRandoms -> Wait until it's built.  -> Run PrintRandoms with ProgramRunner
+///                                          \                                                 |
+///                                           -> Build ProgramRunner -> Wait until it's built -|
+///                                                                                            |
+/// Clean Test File --------------------------------------------------------------------------/
+use std::process::{Command, Stdio};
+
+fn run_command(command: &[&str]) {
+    Command::new(command[0])
+        .args(&command[1..])
+        .stdout(Stdio::piped())
+        .spawn()
+        .unwrap()
+        // If only we could use try_wait() here.
+        .wait()
+        .unwrap();
+}
+
+fn main() {
+    //
+    let mut scheduler = Scheduler::new();
+
+    // Add the task to clean cargo. Doesn't require anything,
+    // and once we've done it, we've started the clean command.
+    scheduler.add_task(Task {
+        prerequisites: HashSet::new(),
+        task: Box::new(|| {
+            println!("Cleaning cargo.");
+            run_command(&["cargo", "clean"]);
+            TaskResult::Finished(HashSet::from([Prerequisites::CleanedCargo]))
+        }),
+    });
+
+    
+    // Build the print_randoms binary
+    scheduler.add_task(Task {
+        prerequisites: HashSet::from([Prerequisites::CleanedCargo]),
+        task: Box::new(|| {
+            println!("Building print_randoms.");
+            run_command(&["cargo", "build", "--bin", "print_randoms"]);
+            TaskResult::Finished(HashSet::from([Prerequisites::CargoBuiltPrintRandoms]))
+        }),
+    });
+
+    // Build the program_runner binary
+    scheduler.add_task(Task {
+        prerequisites: HashSet::from([Prerequisites::CleanedCargo]),
+        task: Box::new(|| {
+            println!("Building program_runner");
+            run_command(&["cargo", "build", "--bin", "program_runner"]);
+            TaskResult::Finished(HashSet::from([Prerequisites::CargoBuiltProgramRunner]))
+        }),
+    });
+
+    // Run the program_runner binary
+    scheduler.add_task(Task {
+        prerequisites: HashSet::from([
+            Prerequisites::CleanedTestFile,
+            Prerequisites::CargoBuiltPrintRandoms,
+            Prerequisites::CargoBuiltProgramRunner,
+        ]),
+        task: Box::new(|| {
+            println!("Running program_runner.");
+            run_command(&[
+                "cargo",
+                "run",
+                "--bin",
+                "program_runner",
+                "randoms",
+                "cargo",
+                "run",
+                "--bin",
+                "print_randoms",
+            ]);
+            TaskResult::Finished(HashSet::from([Prerequisites::WrittenRandoms]))
+        }),
+    });
+
+    // We also want to make sure there isn't a file called
+    // "randoms"
+    scheduler.add_task(Task {
+        prerequisites: HashSet::new(),
+        task: Box::new(|| {
+            println!("Removing randoms.");
+            run_command(&["rm", "-f", "randoms"]);
+            TaskResult::Finished(HashSet::from([Prerequisites::CleanedTestFile]))
+        }),
+    });
+
+    scheduler.start();
+
+
+
+    // use msg
+}
+
+
+/*
+let msg = String::from("Hello"); // stored on the heap
+let a = 1; // stored on the stack
+
+scheduler.add_task(Task {
+    prerequisites: HashSet::new(),
+    task: Box::new(|| {
+        x += 1; // &mut x
+        // RefCell
+        println!("{}", msg); // msg does not live long enough
+        TaskResult::Finished(HashSet::new())
+    }),
+});
+*/

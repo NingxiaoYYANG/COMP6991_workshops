@@ -11,7 +11,7 @@ fn call_with_fn(f: TODO, x: i32) -> i32
     f(x)
 }
 
-fn call_with_fn_mut(mut f: TODO, x: i32) {
+fn call_with_fn_mut(mut f: TODO, x: i32) -> i32 {
     f(x)
 }
 
@@ -55,7 +55,7 @@ fn main() {
 
     // let message = String::from("Ada");
     // let consume_message = move |value: i32| {
-    //     println!("{} says {value}", message);  
+    //     format!("{} says {value}", message);  
     // };
     // println!("{}", call_with_fn_once(consume_message, 7));
 
