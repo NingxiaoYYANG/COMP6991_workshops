@@ -1,18 +1,21 @@
 /*
 Concurrency:
+Multiple program being executed concurrently
 
 Concurrency vs Parallelism
+Concurrency: Constly switching which program runs in cpu in a very fast time.
+Parallelism: Have multiple cpu cores to run program at the same time.
 
 Issues that could occur in concurrency:
-- Data Race
-- Dead Lock
-- Dangling Reference
-
+- Data Race: Multiple threads could access the same data and modify it, then we con't know which result would be true
+- Dead Lock: When multiple threads are waiting for other threads to release the lock
+- Dangling Reference: Multiple threads could have reference pointing to the same data, when data is dropped in one thread, 
+other thread would hold a dangling reference
 
 How other languages solve concurrency issues:
-C++:
-Java:
-Python:
+C++: Mutex lock (Manully write lock and release lock for resource)
+Java: Syncronized (Automatically handle concurrency resource)
+Python: python GLI will make sure program is run in a single threaded situation
 
 Thread Management:
 - spawn a thread
@@ -21,11 +24,19 @@ Thread Management:
 
 How do we communicate between threads?
 - Send & Sync Trait
-- Channel
-    mpsc
-- Arc
-- Mutex
+- Channel: Sending object to different threads by ownership
+    mpsc: multiple producer single consumer
+- Arc: &T
+- Mutex: *mut T
+- Arc<Mutex<T>>: &mut T 
 */
+
+// struct myStruct {   
+//     a: i32,
+//     b: bool
+// }
+
+use std::{println, sync::{Arc, Mutex, mpsc::channel}, thread};
 
 fn main() {
     // println!("1");
@@ -37,18 +48,22 @@ fn main() {
 
     // spawning a thread
     {
-        // let handle = thread::spawn(|| {
-        //     println!("1");
+        // let a = Arc::new(String::from("hello"));
+        // let a_clone = Arc::clone(&a); // Not cloning the string, but instead cloning the pointer
+        // let handle = thread::spawn(move || {
+        //     println!("1 {}", a_clone); // a captured into closure through T
         //     println!("2");
         // });
 
-        // let handle2 = thread::spawn(|| {
-        //     println!("3");
+        // let a_clone = a.clone();
+        // let handle2 = thread::spawn(move || {
+        //     println!("3 {}", a_clone);
         //     println!("4");
         // });
 
-        // let handle3 = thread::spawn(|| {
-        //     println!("5");
+        // let a_clone = a.clone();
+        // let handle3 = thread::spawn(move || {
+        //     println!("5 {}", a_clone);
         //     println!("6");
         // });
 
@@ -74,10 +89,10 @@ fn main() {
 
     // spawning a thread with scope
     {
-        // // let msg = String::from("hello");
+        // let msg = String::from("hello");
         // thread::scope(|s| {
-        //     let a = s.spawn(|| {
-        //         println!("1");
+        //     s.spawn(|| {
+        //         println!("1 {}", msg); // msg is being captured through &T
         //         println!("2");
         //     });
 
@@ -96,7 +111,7 @@ fn main() {
         //     // automatically join all the threads created in scope
         // });
 
-        // println!("7");
+        // println!("7 {}", msg);
     }
 
     // difference between scope spawn and thread::spawn
@@ -134,10 +149,25 @@ fn main() {
         // // joined at the end of the scope
     }
 
+    // Chunks
+    {
+        // let v = vec![1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        // thread::scope(|s| {
+        //     for chunk in v.chunks(3) {
+        //         s.spawn(move ||  {
+        //             println!("{:?}", chunk);
+        //         });
+        //     }
+        // });
+    }
+    
+
     // Channel
     {
         // let (sender, receiver) = channel();
 
+        // let sender1 = sender.clone();
         // let handle = thread::spawn(move || {
         //     let vals = vec![
         //         String::from("Hi"),
@@ -147,16 +177,36 @@ fn main() {
         //     ];
 
         //     for val in vals {
-        //         sender_clone.send(val).unwrap();
+        //         sender1.send(val).unwrap();
+        //     }
+        // });
+
+        // let sender1 = sender.clone();
+        // let handle2 = thread::spawn(move || {
+        //     let vals = vec![
+        //         String::from("Hi"),
+        //         String::from("from"),
+        //         String::from("the"),
+        //         String::from("thread"),
+        //     ];
+
+        //     for val in vals {
+        //         sender1.send(val).unwrap();
         //     }
         // });
 
 
-
         // handle.join().unwrap();
+        // handle2.join().unwrap();
 
-
-        // println!("{}", receiver.recv().unwrap());
+        // // for msg in receiver {
+        // //     println!("{}", msg);
+        // // }
+        // // println!("{}", receiver.recv().unwrap());
+        // // println!("{}", receiver.recv().unwrap());
+        // // println!("{}", receiver.recv().unwrap());
+        // // println!("{}", receiver.recv().unwrap());
+        // // println!("{}", receiver.recv().unwrap());
     }
 
     // Arc and Mutex
@@ -165,7 +215,7 @@ fn main() {
         // // Arc<T> == &T
         // // Mutex<T> == mut T
         // // Arc<Mutex<T>> == &mut T
-        // let counter = Arc::new(Mutex::new(Cell::new(0)));
+        // let counter = Arc::new(Mutex::new(0));
         
         // // Create multiple threads that will increment the counter
         // let mut handles = vec![];
@@ -180,8 +230,9 @@ fn main() {
         //         // Lock the mutex to modify the counter
         //         // let mut num = counter.lock().unwrap();
         //         // *num += 1;
-        //         let ptr = counter_reference.lock().unwrap().as_ptr();
-        //         println!("Thread {} incremented counter to {:?}", i, counter_reference);
+        //         let mut ptr = counter_reference.lock().unwrap();
+        //         *ptr += 1;
+        //         println!("Thread {} incremented counter to {:?}", i, *ptr);
         //     });
             
         //     handles.push(handle);

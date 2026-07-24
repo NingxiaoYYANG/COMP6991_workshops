@@ -180,8 +180,9 @@ fn main() {
         //         // Lock the mutex to modify the counter
         //         // let mut num = counter.lock().unwrap();
         //         // *num += 1;
-        //         let ptr = counter_reference.lock().unwrap().as_ptr();
-        //         println!("Thread {} incremented counter to {:?}", i, counter_reference);
+        //         let ptr = counter_reference.lock().unwrap();
+        //         *ptr += 1;
+        //         println!("Thread {} incremented counter to {:?}", i, *ptr);
         //     });
             
         //     handles.push(handle);
